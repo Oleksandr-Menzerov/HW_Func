@@ -2,17 +2,17 @@
 
 As an input you have class User
 
-public class User
+        public class User
 
-        {
+                {
 
-                public string Name { get; set; }
+                        public string Name { get; set; }
 
-                public string Gender { get; set; }
+                        public string Gender { get; set; }
 
-                public int Age { get; set; }
-        
-        }
+                        public int Age { get; set; }
+
+                }
 
 
 Create a new List of users and initialize it with data, like, new User { Age = 19, Name = "Sam", Gender = "M" }
