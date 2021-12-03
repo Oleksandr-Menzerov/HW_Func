@@ -39,7 +39,7 @@ namespace HW_Func
         {
             return user.Name.Contains(name);
         }
-        public static void myFilter(List<User> users, Func<User, string, bool> selectorFunc, string selector)
+        public static void MyFilter(List<User> users, Func<User, string, bool> selectorFunc, string selector)
         {
             var filteredUsers =
                     (from user in users
@@ -70,11 +70,11 @@ namespace HW_Func
             users.Add(new() { Age = 29, Name = "Abby", Gender = "F" });
             users.Add(new() { Age = 17, Name = "Rick", Gender = "M" });
             Func<User, string, bool> selector = AgeFilter;
-            myFilter(users, selector, ">18");
+            MyFilter(users, selector, ">18");
             selector = GenderFilter;
-            myFilter(users, selector, "F");
+            MyFilter(users, selector, "F");
             selector = NameFilter;
-            myFilter(users, selector, "i");
+            MyFilter(users, selector, "i");
         }
     }
 }
